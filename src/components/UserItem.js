@@ -1,7 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { View } from "react-native";
-import { Button, Card, Icon, Text } from "react-native-paper";
+import { Card } from "react-native-paper";
 import CustomAvatar from "./ui/CustomAvatar";
 import NameAndCompany from "./ui/NameAndCompany";
 import EmailAdressPhone from "./ui/EmailAdressPhone";
@@ -11,15 +11,15 @@ const UserItem = ({ user }) => {
   const navigation = useNavigation();
 
   const clickPostHandler = () => {
-    navigation.navigate("UserDetails", { user: user });
+    navigation.navigate("UserPosts", { userId: user.id });
   };
 
   const clickDetailsHandler = () => {
-    console.log("Show more user details");
+    navigation.navigate("UserDetails", { user: user });
   };
 
   return (
-    <Card theme={{ roundness: 0 }} elevation={5} style={{ marginBottom: 3 }}>
+    <Card theme={{ roundness: 0 }} elevation={5} style={{ margin: 3 }}>
       <Card.Content style={{ flex: 1, flexDirection: "column", gap: 10 }}>
         <View>
           <View style={{ flex: 1, flexDirection: "row", gap: 18 }}>

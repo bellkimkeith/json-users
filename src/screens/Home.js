@@ -16,7 +16,9 @@ const Home = () => {
       setUsers(jsonResult);
     };
 
-    getUsers();
+    setTimeout(() => {
+      getUsers();
+    }, 1000);
     setIsLoading(false);
   }, []);
 
@@ -27,7 +29,7 @@ const Home = () => {
       style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
     />
   ) : (
-    <View>
+    <View style={{ backgroundColor: theme.colors.onPrimaryContainer }}>
       <FlatList
         data={users}
         keyExtractor={(item) => item.id}

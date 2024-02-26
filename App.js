@@ -4,6 +4,7 @@ import UserDetails from "./src/screens/UserDetails";
 import { StatusBar } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import UserPosts from "./src/screens/UserPosts";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -13,7 +14,7 @@ export default function App() {
     <>
       <StatusBar barStyle="default" />
       <PaperProvider>
-        <NavigationContainer>
+        <NavigationContainer theme={theme}>
           <Stack.Navigator initialRouteName="Home">
             <Stack.Screen
               name="Home"
@@ -28,6 +29,15 @@ export default function App() {
               component={UserDetails}
               options={{
                 title: "Users Details",
+                headerBackTitleVisible: false,
+                headerTintColor: theme.colors.primary,
+              }}
+            />
+            <Stack.Screen
+              name="UserPosts"
+              component={UserPosts}
+              options={{
+                title: "Users Posts",
                 headerBackTitleVisible: false,
                 headerTintColor: theme.colors.primary,
               }}
