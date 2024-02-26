@@ -29,7 +29,7 @@ const Home = () => {
       style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
     />
   ) : (
-    <View style={{ backgroundColor: theme.colors.onPrimaryContainer }}>
+    <View style={{ backgroundColor: theme.colors.primary }}>
       <FlatList
         data={users}
         keyExtractor={(item) => item.id}
