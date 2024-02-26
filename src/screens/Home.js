@@ -1,9 +1,12 @@
-import { View, Text, FlatList, StyleSheet, SafeAreaView } from "react-native";
+import { View, FlatList, StyleSheet } from "react-native";
 import { useEffect, useState } from "react";
 import React from "react";
+import UserItem from "../components/UserItem";
+import { useTheme } from "react-native-paper";
 
 const Home = () => {
   const [users, setUsers] = useState([]);
+  const theme = useTheme();
 
   useEffect(() => {
     const getUsers = async () => {
@@ -15,12 +18,12 @@ const Home = () => {
     getUsers();
   }, []);
 
-  const UserItem = ({ user }) => {
-    return <Text>{user.name}</Text>;
-  };
-
   return (
-    <View>
+    <View
+      style={{
+        flex: 1,
+      }}
+    >
       <FlatList
         data={users}
         keyExtractor={(item) => item.id}

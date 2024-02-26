@@ -1,11 +1,14 @@
-import { SafeAreaView, StatusBar } from "react-native";
+import { PaperProvider } from "react-native-paper";
 import Home from "./src/screens/Home";
+import { SafeAreaView, StatusBar } from "react-native";
 
 export default function App() {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar barStyle="default" />
-      <Home />
-    </SafeAreaView>
+    <PaperProvider>
+      <SafeAreaView style={{ flex: 1 }}>
+        <StatusBar barStyle="default" />
+        <Home />
+      </SafeAreaView>
+    </PaperProvider>
   );
 }
