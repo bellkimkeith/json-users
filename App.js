@@ -1,15 +1,11 @@
-import { View, Text } from "react-native";
+import { SafeAreaView, StatusBar } from "react-native";
+import Home from "./src/screens/Home";
 
 export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Universal React with Expo</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar barStyle="default" />
+      <Home />
+    </SafeAreaView>
   );
 }
