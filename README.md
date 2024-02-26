@@ -1,43 +1,27 @@
-# My Universal React Project
+# Simple User Display app with JSONPlaceholder
 
-<p>
-  <!-- iOS -->
-  <a href="https://itunes.apple.com/app/apple-store/id982107779">
-    <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
-  </a>
-  <!-- Android -->
-  <a href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample">
-    <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
-  </a>
-  <!-- Web -->
-  <a href="https://docs.expo.dev/workflow/web/">
-    <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
-  </a>
-</p>
+An demo application for displaying user data designed with react native paper library.
 
-## 🚀 How to use
+## Project Screenshots
 
-- Install packages with `yarn` or `npm install`.
-  - If you have native iOS code run `npx pod-install`
-- Run `yarn start` or `npm run start` to start the bundler.
-- Open the project in a React runtime to try it:
-  - iOS: [Client iOS](https://itunes.apple.com/app/apple-store/id982107779)
-  - Android: [Client Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample)
-  - Web: Any web browser
+<img src="screenshots/Home.png" height="720px" width="320px" style="border-radius: 10px;">
+<img src="screenshots/Posts.png" height="720px" width="320px" style="border-radius: 10px;">
+<img src="screenshots/DetailMap.png" height="720px" width="320px" style="border-radius: 10px;">
 
-## Running/Modifying Native Code
+## Installation and Setup Instructions
 
-You can generate native iOS and Android projects from your Expo config file (**app.json**/ **app.config.js**) by runnning `npx expo prebuild`. These native projects can then be compiled and run via XCode and Android Studio.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
 
-> 💡 Learn more about [native code in Expo](https://docs.expo.dev/workflow/customizing/)
+Installation:
 
-## Publishing
+`npm install`
 
-- Deploy the native app to the App store and Play store using this guide: [Deployment](https://docs.expo.dev/distribution/app-stores/).
-- Deploy the website using this guide: [Web deployment](https://docs.expo.dev/distribution/publishing-websites/).
+To Start Server:
 
-## 📝 Notes
+`npm start`
 
-- Learn more about [Universal React](https://docs.expo.dev/).
-- See what API and components are [available in the React runtimes](https://docs.expo.dev/versions/latest/).
-- Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
+## Important 3rd Party libraries used
+
+- JSONPlaceholder for mock data (https://jsonplaceholder.typicode.com/)
+- React Native Paper for design (https://reactnativepaper.com/)
+- dotenv for keeping apikey safe (https://www.npmjs.com/package/react-native-dotenv)
