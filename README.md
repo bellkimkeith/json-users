@@ -1,6 +1,6 @@
 # Simple User Display app with JSONPlaceholder
 
-An demo application for displaying user data designed with react native paper library.
+A demo application for displaying user data designed with react native paper library.
 
 ## Project Screenshots
 
