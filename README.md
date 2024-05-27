@@ -4,9 +4,11 @@ An demo application for displaying user data designed with react native paper li
 
 ## Project Screenshots
 
-<img src="screenshots/Home.png" height="720px" width="320px" style="border-radius: 10px;">
-<img src="screenshots/Posts.png" height="720px" width="320px" style="border-radius: 10px;">
-<img src="screenshots/DetailMap.png" height="720px" width="320px" style="border-radius: 10px;">
+<p float="left">
+    <img src="screenshots/Home.png" height="720px" style="border-radius: 10px;">
+    <img src="screenshots/Posts.png" height="720px" style="border-radius: 10px;">
+    <img src="screenshots/DetailMap.png" height="720px" style="border-radius: 10px;">
+<p float="left">
 
 ## Installation and Setup Instructions
 
